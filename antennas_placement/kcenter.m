@@ -1,35 +1,51 @@
-function [S, R, XY] = kcenter()
-% kcenter
-%   [S, R, XY] = kcenter()
-% input:
-%   P - X, Y Coordinates
-%   k - the number of centers to be choosen.
-% output:
+function [S, R, XY] = kcenter(exname, limit)
+%KCENTER - algorithm to place the two types of antennas
+%
+% Syntax:  [S, R, XY] = kcenter(exname, limit)
+%
+% Inputs:
+%    exname - excel file
+%    limit  - 1300 meters for MICRO antennas
+%           -  200 meters for PICO antennas
+%
+% Outputs:
 %   S - indices of antennas
 %   R - covering radius
-%   C - X,Y possitions of antennas
-% example :
-% [S R XY] = kcenter()
-file='buildingsIDXY.xlsx';
-[~,~,res] = xlsread(file);
-file='buildingsIDXYRes.csv'; %save results
+%   XY possitions of antennas
+%
+% Example: 
+%   [S R XY] = kcenter('buildingsIDXY.xlsx', 200)
+%
+% Other m-files required: none
+% Subfunctions: none
+% MAT-files required: none
+%
+% See also: none
 
-%Inputs
-% load res -mat;
-% file = 'antennas.csv';
+% Author        : Marios Kyriakou
+% Work address  : KIOS Research Center, University of Cyprus
+% email         : mkiria01@ucy.ac.cy
+% Website       : http://www.kios.ucy.ac.cy
+% Last revision : September 2016
+
+%------------- BEGIN CODE --------------
+
+[~,~,res] = xlsread(exname);
+[~,ex]=fileparts(exname);
+% save results
+file=[ex,'Res.csv']; 
 
 ID = res(:,1);
 X1 = str2num(char(res{2:end,2}));
 Y1 = str2num(char(res{2:end,3}));
 P = [X1 Y1];
 S=1;
-% limit = 1300; %meters Gia tis polles antennes genika MICRO
-limit = 200; % PICO
 
-%initial
+% initial
 n = length(P);
 L = zeros(1,n);
 L(1) = S;
+
 % initial DD, R
 Skns = zeros(n, length(P));
 R = zeros(n-1,1);
@@ -46,16 +62,17 @@ for i=2:n %868
   SknsMin = min(SknsMin, Skns(i,:));
 end
 
-%results
+% results
 R(n) = max(SknsMin);
 S =L';
 XY = P(L,:);
 S=S(find(R>limit));
 
-% Write CSV File
+% write CSV file
 if exist(file)
    delete(file) 
 end
+
 csvwrite(file,[S,XY(find(R>limit),1),XY(find(R>limit),2)]);
 [tlines]=regexp( fileread(file), '\n', 'split');
 tlinesNew = cell(1,length(tlines)+1);
@@ -68,3 +85,4 @@ for i=1:length(tlinesNew)
 end
 fclose all;
 
+%------------- END OF CODE --------------
