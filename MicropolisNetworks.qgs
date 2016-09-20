@@ -45,12 +45,12 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Cellular Network">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Cellular Network">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="antennas3D20160413152905106" name="antennas3D">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="antennas3D20160413152905106" name="antennas3Dmicro">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="picoAntennasFinal20160408191342094" name="picoAntennasFinal">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="picoAntennasFinal20160408191342094" name="picoAntennasFinal">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="buildings_v120160919151311458" name="buildings_v1">
@@ -230,15 +230,15 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Cellular Network">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="antennas3D" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Cellular Network">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="antennas3Dmicro" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="antennas3D20160413152905106" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="antennas3D20160413152905106" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="picoAntennasFinal" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="picoAntennasFinal" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="picoAntennasFinal20160408191342094" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="picoAntennasFinal20160408191342094" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="buildings_v1" showFeatureCount="0">
@@ -846,7 +846,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_junctions20160408125804356</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_junctions.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_junctions.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -1150,7 +1150,7 @@
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_pipes20160408125804374</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_pipes.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_pipes.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -1498,7 +1498,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_pumps20160408125804393</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_pumps.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_pumps.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -1833,7 +1833,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_reservoirs20160408125804414</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_reservoirs.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_reservoirs.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -2113,7 +2113,7 @@
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_tanks20160408125804434</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_tanks.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_tanks.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -2429,7 +2429,7 @@
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>MICROPOLIS_v1_valves20160408125804455</id>
-      <datasource>./_shapefiles_/MICROPOLIS_v1_valves.shp</datasource>
+      <datasource>./gis_files/MICROPOLIS_v1_valves.shp</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -3987,7 +3987,7 @@
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>antennas3D</layername>
+      <layername>antennas3Dmicro</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -4637,10 +4637,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -4802,10 +4802,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
