@@ -14,8 +14,10 @@ function [S, R, XY] = kcenter(exname, limit)
 %   XY possitions of antennas
 %
 % Example: 
-%   [S R XY] = kcenter('buildingsIDXY.xlsx', 200)
-%
+%   [S R XY] = kcenter('buildingsIDXY.xlsx', 1300)
+%   [S R XY] = kcenter('buildingsPointsPart1.xlsx', 200)
+%   [S R XY] = kcenter('buildingsPointsPart2.xlsx', 200)
+% 
 % Other m-files required: none
 % Subfunctions: none
 % MAT-files required: none
@@ -36,21 +38,20 @@ function [S, R, XY] = kcenter(exname, limit)
 file=[ex,'Res.csv']; 
 
 ID = res(:,1);
-X1 = str2num(char(res{2:end,2}));
-Y1 = str2num(char(res{2:end,3}));
+X1 = str2num(char(res{:,2}));
+Y1 = str2num(char(res{:,3}));
 P = [X1 Y1];
 S=1;
 
-% initial
+% greedy optimisation
 n = length(P);
 L = zeros(1,n);
 L(1) = S;
-
 % initial DD, R
 Skns = zeros(n, length(P));
 R = zeros(n-1,1);
 
-% Calculate symmetric matrix A
+% calculate symmetric matrix A
 A=dist(P,P');
 Skns(1, :) = A(1,:);   
 SknsMin = Skns(1, :);
@@ -62,7 +63,7 @@ for i=2:n %868
   SknsMin = min(SknsMin, Skns(i,:));
 end
 
-% results
+%results
 R(n) = max(SknsMin);
 S =L';
 XY = P(L,:);
