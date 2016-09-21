@@ -45,12 +45,12 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Cellular Network">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Cellular Network">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="antennas3D20160413152905106" name="antennas3Dmicro">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="antennas3D20160413152905106" name="antennas3Dmicro">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="picoAntennasFinal20160408191342094" name="picoAntennasFinal">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="picoAntennasFinal20160408191342094" name="picoAntennasFinal">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="buildings_v120160919151311458" name="buildings_v1">
@@ -241,15 +241,15 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Cellular Network">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="antennas3Dmicro" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Cellular Network">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="antennas3Dmicro" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="antennas3D20160413152905106" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="antennas3D20160413152905106" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="picoAntennasFinal" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="picoAntennasFinal" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="picoAntennasFinal20160408191342094" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="picoAntennasFinal20160408191342094" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="buildings_v1" showFeatureCount="0">
