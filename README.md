@@ -1,1 +1,11 @@
-# micropolis-testbed
+<a href="http://www.kios.ucy.ac.cy"><img src="https://www.kios.ucy.ac.cy/wp-content/uploads/2021/07/Logotype-KIOS.svg" width="200" height="100"/><a>
+
+[![DOI](https://zenodo.org/badge/DOI/10.1007/978-3-319-54558-5_17.svg)](https://zenodo.org/records/1248478)
+
+# Test System for Mapping Interdependencies of Critical Infrastructures for Intelligent Management in Smart Cities
+
+The critical infrastructures such as power distribution networks, water networks, transportation, and telecommunication networks that are settled within the area of a city produce a large amount of data from applications such as AMI, SCADA, Renewable Energy Management Systems, Asset Management Systems, and weather data. To convert this massive data into useful information, visualization is an effective solution. Visualizing this large amount of data in a holistic view of critical infrastructure mapping at a city
+level is a missing link. Visualization means here to convert the flow of continuous data into useful information. In this paper, we propose a technique to visualize critical infrastructure data by using a system that consists of GIS (Geographic Information System) for buffer spatial analysis and Google Earth in sync with realistic planning and operation methodologies specific to each infrastructure modeled. The major goal of this work is to design, model and validate a benchmark system that is capable of visualizing and map as well as preparing the next inter-linking phase of modeling interdependencies of several critical infrastructures. Furthermore, we aim to provide the grounds for a theoretical framework that can capture the interdependencies between critical infrastructures using techniques from graph theory, machine learning, econometric science, and operation research. The proposed framework for modeling the interdependencies between several infrastructures within a city territory is based on hybrid system automata and it is among the first steps needed in developing fundamental mechanisms for rthe esilient management of critical infrastructures and the safe operation of smart cities. An example of how this framework can be applied is also presented.
+
+**FAULT-ADAPTIVE** Grant agreement ID: 291508 <br>
+https://www.kios.ucy.ac.cy/fault-adaptive/
